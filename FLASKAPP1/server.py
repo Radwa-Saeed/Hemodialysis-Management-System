@@ -96,7 +96,7 @@ def logout():
    session.pop('id', None)
    session.pop('username', None)
    # Redirect to login page
-   return redirect(url_for('hello_name'))    
+   return render_template('index.html')    
        
 # http://localhost:5000/profile - this will be the profile page, only accessible for loggedin users
 @app.route('/profile')
@@ -116,7 +116,16 @@ def profile():
 
 @app.route('/')
 def hello_name():
-   return render_template('index.html', username=session['username'])
+    # Check if user is loggedin
+    if 'loggedin' in session:
+   
+        # User is loggedin show them the home page
+        return render_template('index.html', username=session['username'])  
+    # User is not loggedin redirect to login page
+    return render_template('index.html')
+
+
+    
 
 @app.route('/adddoctor')
 def adddoctor():
