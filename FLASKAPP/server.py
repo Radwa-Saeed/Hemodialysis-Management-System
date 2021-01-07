@@ -20,7 +20,13 @@ app.secret_key = 'team13'
 #*********** Home Page ******** http://127.0.0.1:5000/
 @app.route('/')
 def hello_name():
-   return render_template('index.html')
+    # Check if user is loggedin
+    if 'loggedin' in session:
+   
+        # User is loggedin show them the home page
+        return render_template('index.html', username=session['username'])  
+    # User is not loggedin redirect to login page
+    return render_template('index.html')
 
 @app.route('/adddoctor')
 def adddoctor():
