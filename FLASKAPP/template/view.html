@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/view.css') }}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>View Doctor</title>
+
+    </head>
+    <body>
+        <div class="wrapper fadeInDown">
+            <div id="formContent" style="overflow-x:auto;">
+                <!-- Tabs Titles -->
+                <a class="inactive underlineHover" href="{{ url_for('adddoctor') }}" style="text-decoration: none; font-size: 16px;">Add Doctor</a>
+                <h2 class="active"> View Doctor </h2>
+                <!-- Icon -->
+                <div class="fadeIn first">
+                    <img src="/static/img/logo.png" id="icon" alt="User Icon" style="max-width: 20%;" />
+                </div >
+                {% extends "adddoctor.html" %} {% block main %}
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Dcode</th>
+                            <th scope="col">Fname</th>
+                            <th scope="col">Mname</th>
+                            <th scope="col">Lname</th>
+                            <th scope="col">phone</th>
+                            <th scope="col">mail</th>
+                            <th scope="col">Birth_date</th>
+                            <th scope="col">Doctor_ID</th>
+                            <th scope="col">syndicate_number</th>
+                            <th scope="col">salary</th>
+                            <th scope="col">gender</th>
+                            <th scope="col">address</th>
+                            <th scope="col">jop_rank</th>
+                            <th scope="col">access_level</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {% for data in DoctorsData %}
+                        <tr>
+                            <th scope="row">{{loop.index}}</th>
+                            <td>{{data.0}}</td>
+                            <td>{{data.1}}</td>
+                            <td>{{data.2}}</td>
+                            <td>{{data.3}}</td>
+                            <td>{{data.4}}</td>
+                            <td>{{data.5}}</td>
+                            <td>{{data.6}}</td>
+                            <td>{{data.7}}</td>
+                            <td>{{data.8}}</td>
+                            <td>{{data.9}}</td>
+                            <td>{{data.10}}</td>
+                            <td>{{data.11}}</td>
+                            <td>{{data.12}}</td>
+                            <td>{{data.13}}</td>
+
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endblock %}
+                <button type="submit" style="background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); border-radius: 10px;">Submit</button>
+                <a href="http://127.0.0.1:5000"><button type="button" style="background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); border-radius: 10px;">Back</button></a>
+
+            </div>
+        </div>    
+    </body>
+</html>
