@@ -2,7 +2,7 @@
 
  Database Management system (DBMS) Specific for Hemodialysis Department
  
-<p align="center"><img src="./imgs/08.png" alt="Original" width="100%"/></p>
+<p align="center"><img src="./imgs/08.png" alt="Original" width="80%"/></p>
 
 <h2> Software Specifications </h2>
 
@@ -26,9 +26,9 @@
 
 ## 1. Introduction
 
-The purpose of this project is to computerize the Front Office Management of the Hospital Hemodialysis Department to develop software which is user friendly simple, fast, and cost-effective.
+* The purpose of this project is to computerize the Front Office Management of the Hospital Hemodialysis Department to develop software which is user friendly simple, fast, and cost-effective.
 
- It deals with the collection of patient’s information, diagnosis details, etc. Traditionally, it was done manually.
+* It deals with the collection of patient’s information, diagnosis details, etc. Traditionally, it was done manually.
 
  <p align="center"><img src="./imgs/00.png" alt="Original" width="100%"/></p>
  
@@ -37,8 +37,8 @@ The purpose of this project is to computerize the Front Office Management of the
  * The main function of the system is register and store patient details and doctor details and retrieve these details as and when required, and also to manipulate these details meaningfully.
 
  <p align="center">
- <img src="./imgs/07.png" alt="Original" width="500"/>
- <img src="./imgs/10.png" alt="Original" width="500"/>
+ <img src="./imgs/07.png" alt="Original" width="500" height="300"/>
+ <img src="./imgs/10.png" alt="Original" width="500" height="300"/>
  </p>
  
 * System input contains patient details, diagnosis details, whilesystem output is to get these details on to the screen.
