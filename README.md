@@ -1,4 +1,6 @@
 # Hemodialysis Management System
+
+ Database Management system (DBMS) Specific for Hemodialysis Department
  
 <p align="center"><img src="./imgs/08.png" alt="Original" width="100%"/></p>
 
@@ -17,9 +19,10 @@
     
 <h2> Contents </h2>
 
-1.  [Introduction]()
-2.  [Features & Design]()
-3.  [Run App]()
+1.  [Introduction](https://github.com/Radwa-Saeed/Hemodialysis#1-introduction)
+2.  [Features](https://github.com/Radwa-Saeed/Hemodialysis#2-features)
+3.  [Design](https://github.com/Radwa-Saeed/Hemodialysis#3-design)
+4.  [Run App](https://github.com/Radwa-Saeed/Hemodialysis#4-run-app)
 
 ## 1. Introduction
 
@@ -45,7 +48,7 @@ The purpose of this project is to computerize the Front Office Management of the
 * The data can be retrieved easily.
 * The data are well protected for personal use and makes thedata processing very fast
 
-## 4. Design
+## 3. Design
 
 * After Registeration the user will be redirected to the main page and according to the user's role he/she will be able to access and manipulate with specific data
 
@@ -71,7 +74,7 @@ The purpose of this project is to computerize the Front Office Management of the
 
 
 
-## 3. Run App
+## 4. Run App
 1. open server.py
 2. right-click then run python file in terminal
 3. write (http://127.0.0.1:5000/) in your prowser
